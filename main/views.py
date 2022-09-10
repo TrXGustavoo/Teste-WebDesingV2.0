@@ -1,6 +1,6 @@
 from importlib.resources import contents
 from multiprocessing import context
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
@@ -19,7 +19,6 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('dietas')
         else:
             messages.error(request, 'Erro no cadastro')
     form = NovoUsuarioForm()
