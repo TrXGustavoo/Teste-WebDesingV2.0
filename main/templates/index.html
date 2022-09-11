@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +10,9 @@
 <body style="background-color: white;" >
     
     {% include 'navbar.html' %}
+
+
+    <img id="img-a" src="{% static 'main/img/Index-img.png' %}" style="width: 1310px; height: 620.40px;" alt="">
 
     {% if messages %}
         <ul class="messages">

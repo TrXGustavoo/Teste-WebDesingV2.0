@@ -11,27 +11,34 @@
     position: fixed;
     justify-content: center;
     align-items: center;
-    border: 1px solid purple;
+    /* border: 1px solid purple; */
     width: 100%;
+    background: #0D5673;
+    background: linear-gradient(to bottom, #0D5673 19%, #7DCCB5 100%);
 }
+
+
 
 #logo{
     flex: 30%;
-    border: 1px solid yellowgreen;
+    /* border: 1px solid yellowgreen; */
 }
 
 #menu-servicos{
     flex: 70%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: right;
 }
 
 a{
-    margin-right: 5%;
-    color: black;
-    padding: 15px 30px;
-    background-color: gray;
-    -webkit-border-radius: 21px;
-    -moz-border-radius: 21px;
-    border-radius: 21px;   
+    margin-right: 5% !important;
+    color: white !important;
+    padding: 10px 22.4px !important;
+    background-color: transparent !important;
+    border: 1px solid white;
+    /* -webkit-border-radius: 21px !important;
+    -moz-border-radius: 21px !important;
+    border-radius: 21px  !important; */
+    font-size: 26px;
 }
+
