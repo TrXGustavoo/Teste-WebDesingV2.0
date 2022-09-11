@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 #barra-navegacao{
     display: flex;
     flex-direction: row;
@@ -27,6 +28,5 @@
 
 a{
     margin-right: 5%;
-    padding: 15px 20px;
-    background-color: black;
+    color: black;
 }
