@@ -19,6 +19,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
+            return redirect(to='home')
         else:
             messages.error(request, 'Erro no cadastro')
     form = NovoUsuarioForm()

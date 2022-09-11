@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+#barra-navegacao{
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    background-color: white;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid purple;
+    width: 100%;
+}
+
+#logo{
+    flex: 30%;
+    border: 1px solid yellowgreen;
+}
+
+#menu-servicos{
+    flex: 70%;
+    border: 1px solid red;
+    text-align: right;
+}
+
+a{
+    margin-right: 5%;
+    padding: 15px 20px;
+    background-color: black;
+}
