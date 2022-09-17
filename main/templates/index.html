@@ -5,14 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/styleIndex.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>HYGEIA-SAÚDE</title>
 </head>
 <body style="background-color: white;" >
     
     {% include 'navbar.html' %}
 
+    <main>
+        <section id="headline-img">
+            <img id="img-a" src="{% static 'main/img/Index-img.png' %}"  alt="">
+        </section>
+        <section id="inspiracoes" class="flex-container">
+                <div class="flex-items">
+                    <img id="img-teste" src="{% static 'main/img/TESTE.jpg' %}" alt="">
+                </div>
+                <div class="flex-items">
+                    <h3>
+                        OBJETIVOS DA EMPRESA
+                    </h3>
+                    <p class="obj">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quo nostrum nulla modi, velit corrupti? Adipisci ullam officiis neque praesentium perspiciatis unde possimus, quae impedit aut commodi, dignissimos numquam quod.
+                    </p>
+                    <p class="obj">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, asperiores. Perferendis dicta quis, accusamus consectetur ex doloribus doloremque. Nisi modi explicabo sint itaque! Consequuntur assumenda cumque amet deserunt! Recusandae, sed?
+                    </p>
+                </div>
+                <div class="flex-items">
+                    <h3>
+                        OBJETIVOS DA EMPRESA
+                    </h3>
+                    <p class="obj">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quo nostrum nulla modi, velit corrupti? Adipisci ullam officiis neque praesentium perspiciatis unde possimus, quae impedit aut commodi, dignissimos numquam quod.
+                    </p>
+                    <p class="obj">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, asperiores. Perferendis dicta quis, accusamus consectetur ex doloribus doloremque. Nisi modi explicabo sint itaque! Consequuntur assumenda cumque amet deserunt! Recusandae, sed?
+                    </p>
+                </div>
+                <div class="flex-items">
+                    <img id="img-teste" src="{% static 'main/img/TESTE.jpg' %}" alt="">
+                </div>
+        </section>
+        <section id="his" class="flex-items">
+            <h3>Cronologia HYGIA</h3>
+            <p>
+                Fundada em 2011 em uma pequena cidade no interior de São Paulo, denominada de São Roque, a Hygia cresceu e se tornou uma das mais influentes prestadoras de serviço referente a saúde, tendo clientes satisfeitos em todas as partes do Brasil. Em primeira instância, a empresa surgiu como um trabalho de programação na faculdade, mas foi notado que existia a possibilidade de crescer dentro do mesmo nicho.
+                Os Fundadores, João Orlandini, Leonardo Gonçalves, Christopher Juliato, Gustavo Passos, e Giovana Merguizo tem a utopia de revolucionar o mercado da saúde.
+            </p>
+            <p>
+                A empresa, anteriormente denominada de "Boa Saúde", recebeu o reconhecimento nacional em 2015, quando foi apresentada como um exemplo em uma comissão da ONU (Organização das Ações Unidas), representando o número 3 (saúde de qualidade).
+                Em 2018 a Hygia foi adquirida pela VALE, onde a mesma sofreu uma alta em seu valor e no ano seguinte foi apresentada a bolsa de valores.
+            </p>
+            <p>
+                Em 2022 foi mudada a sua sede para São Paulo e os trabalhos continuam sendo desenvolvidos da forma mais eficaz possível. Hoje prestamos serviços para grandes empresas e órgãos como Microsoft, grupo Votorantim e o SUS.
+            </p>
+        </section>
+    </main>
 
-    <img id="img-a" src="{% static 'main/img/Index-img.png' %}" style="width: 1310px; height: 620.40px;" alt="">
+
+    
 
     {% if messages %}
         <ul class="messages">
@@ -22,5 +74,8 @@
         </ul>
     {% endif %}
     
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
