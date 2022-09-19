@@ -1,81 +1,162 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'main/css/styleIndex.css' %}">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>HYGEIA-SAÚDE</title>
 </head>
-<body style="background-color: white;" >
-    
+
+<body style="background-color: white;">
+
     {% include 'navbar.html' %}
 
     <main>
         <section id="headline-img">
-            <img id="img-a" src="{% static 'main/img/Index-img.png' %}"  alt="">
+            <img id="img-a" src="{% static 'main/img/Index-img.png' %}" alt="">
         </section>
         <section id="inspiracoes" class="flex-container">
-                <div class="flex-items">
-                    <img id="img-teste" src="{% static 'main/img/TESTE.jpg' %}" alt="">
-                </div>
-                <div class="flex-items">
-                    <h3>
-                        OBJETIVOS DA EMPRESA
-                    </h3>
-                    <p class="obj">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quo nostrum nulla modi, velit corrupti? Adipisci ullam officiis neque praesentium perspiciatis unde possimus, quae impedit aut commodi, dignissimos numquam quod.
-                    </p>
-                    <p class="obj">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, asperiores. Perferendis dicta quis, accusamus consectetur ex doloribus doloremque. Nisi modi explicabo sint itaque! Consequuntur assumenda cumque amet deserunt! Recusandae, sed?
-                    </p>
-                </div>
-                <div class="flex-items">
-                    <h3>
-                        OBJETIVOS DA EMPRESA
-                    </h3>
-                    <p class="obj">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quo nostrum nulla modi, velit corrupti? Adipisci ullam officiis neque praesentium perspiciatis unde possimus, quae impedit aut commodi, dignissimos numquam quod.
-                    </p>
-                    <p class="obj">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, asperiores. Perferendis dicta quis, accusamus consectetur ex doloribus doloremque. Nisi modi explicabo sint itaque! Consequuntur assumenda cumque amet deserunt! Recusandae, sed?
-                    </p>
-                </div>
-                <div class="flex-items">
-                    <img id="img-teste" src="{% static 'main/img/TESTE.jpg' %}" alt="">
+            <div class="flex-items">
+                <img id="img-teste" src="{% static 'main/img/TESTE.jpg' %}" alt="">
+            </div>
+            <div class="flex-items">
+                <h3>
+                    OBJETIVOS DA EMPRESA
+                </h3>
+                <p class="obj">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quo nostrum nulla modi, velit
+                    corrupti? Adipisci ullam officiis neque praesentium perspiciatis unde possimus, quae impedit aut
+                    commodi, dignissimos numquam quod.
+                </p>
+                <p class="obj">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, asperiores. Perferendis dicta
+                    quis, accusamus consectetur ex doloribus doloremque. Nisi modi explicabo sint itaque! Consequuntur
+                    assumenda cumque amet deserunt! Recusandae, sed?
+                </p>
+            </div>
+            <div class="flex-items">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="{% static 'main/img/akali_50.jpg' %}" alt="..." width="100%">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'main/img/akali_50.jpg' %}" alt="..." width="75%">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="{% static 'main/img/akali_50.jpg' %}" alt="..." width="75%">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
         </section>
         <section id="his" class="flex-items">
             <h3>Cronologia HYGIA</h3>
             <p>
-                Fundada em 2011 em uma pequena cidade no interior de São Paulo, denominada de São Roque, a Hygia cresceu e se tornou uma das mais influentes prestadoras de serviço referente a saúde, tendo clientes satisfeitos em todas as partes do Brasil. Em primeira instância, a empresa surgiu como um trabalho de programação na faculdade, mas foi notado que existia a possibilidade de crescer dentro do mesmo nicho.
-                Os Fundadores, João Orlandini, Leonardo Gonçalves, Christopher Juliato, Gustavo Passos, e Giovana Merguizo tem a utopia de revolucionar o mercado da saúde.
+                Fundada em 2011 em uma pequena cidade no interior de São Paulo, denominada de São Roque, a Hygia cresceu
+                e se tornou uma das mais influentes prestadoras de serviço referente a saúde, tendo clientes satisfeitos
+                em todas as partes do Brasil. Em primeira instância, a empresa surgiu como um trabalho de programação na
+                faculdade, mas foi notado que existia a possibilidade de crescer dentro do mesmo nicho.
+                Os Fundadores, João Orlandini, Leonardo Gonçalves, Christopher Juliato, Gustavo Passos, e Giovana
+                Merguizo tem a utopia de revolucionar o mercado da saúde.
             </p>
             <p>
-                A empresa, anteriormente denominada de "Boa Saúde", recebeu o reconhecimento nacional em 2015, quando foi apresentada como um exemplo em uma comissão da ONU (Organização das Ações Unidas), representando o número 3 (saúde de qualidade).
-                Em 2018 a Hygia foi adquirida pela VALE, onde a mesma sofreu uma alta em seu valor e no ano seguinte foi apresentada a bolsa de valores.
+                A empresa, anteriormente denominada de "Boa Saúde", recebeu o reconhecimento nacional em 2015, quando
+                foi apresentada como um exemplo em uma comissão da ONU (Organização das Ações Unidas), representando o
+                número 3 (saúde de qualidade).
+                Em 2018 a Hygia foi adquirida pela VALE, onde a mesma sofreu uma alta em seu valor e no ano seguinte foi
+                apresentada a bolsa de valores.
             </p>
             <p>
-                Em 2022 foi mudada a sua sede para São Paulo e os trabalhos continuam sendo desenvolvidos da forma mais eficaz possível. Hoje prestamos serviços para grandes empresas e órgãos como Microsoft, grupo Votorantim e o SUS.
+                Em 2022 foi mudada a sua sede para São Paulo e os trabalhos continuam sendo desenvolvidos da forma mais
+                eficaz possível. Hoje prestamos serviços para grandes empresas e órgãos como Microsoft, grupo Votorantim
+                e o SUS.
             </p>
+        </section>
+        <section class="time">
+            <div class="container">
+                <div class="nosso-time" style="border: 1px solid red;">
+                    <h2>Nosso time</h2>
+                    <h3>naidasodbsaodbsadbusabdsabdiasbdi</h3>
+                </div>
+                <div class="p1" style="border: 1px solid red;">
+                    <h4>Gustavo</h4>
+                    <img src="" alt="">
+                </div>
+                <div class="p2" style="border: 1px solid red;">
+                    <h4>Gustavo</h4>
+                    <img src="" alt="">
+                </div>
+                <div class="p3" style="border: 1px solid red;">
+                    <h4>Gustavo</h4>
+                    <img src="" alt="">
+                </div>
+                <div class="p4" style="border: 1px solid red;">
+                    <h4>Gustavo</h4>
+                    <img src="" alt="">
+                </div>
+                <div class="p5" style="border: 1px solid red;">
+                    <h4>Gustavo</h4>
+                    <img src="" alt="">
+                </div>
+            </div>
         </section>
     </main>
 
 
-    
+
 
     {% if messages %}
-        <ul class="messages">
-            {% for message in messages  %}
-            <li class="{{ message.tags }}">{{ message }}</li>
-            {% endfor %}
-        </ul>
+    <ul class="messages">
+        {% for message in messages %}
+        <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
     {% endif %}
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    {% include 'rodape.html' %}
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

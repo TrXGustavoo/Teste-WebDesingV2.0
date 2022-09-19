@@ -1,9 +1,9 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-#img-a{
-    width: 100%; 
+#img-a {
+    width: 100%;
     height: auto;
 }
 
@@ -15,8 +15,9 @@
     align-items: stretch;
     align-content: stretch;
     margin-top: 5%;
+    /* border: 2px solid red; */
 }
-  
+
 .flex-items:nth-child(1) {
     /* display: block; */
     width: 50%;
@@ -25,13 +26,13 @@
     flex-basis: auto;
     align-self: auto;
     order: 0;
-   /* border: 2px solid red; */
+    /* border: 2px solid red; */
 }
 
-#img-teste{
-    border-radius: 64% 36% 77% 23% / 100% 69% 31% 0%; 
+#img-teste {
+    border-radius: 64% 36% 77% 23% / 100% 69% 31% 0%;
 }
-  
+
 .flex-items:nth-child(2) {
     /* display: block; */
     width: 50%;
@@ -45,41 +46,79 @@
     /* border: 2px solid red; */
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
-.obj{
+.obj {
     text-align: justify;
     text-decoration: none;
 }
 
 .flex-items:nth-child(3) {
     /* display: block; */
-    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    width: 100%;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
     align-self: auto;
     order: 0;
-    /* border: 2px solid red; */
     color: white;
     background: linear-gradient(to bottom, #0D5673 19%, #7DCCB5 100%);
 }
-  
-.flex-items:nth-child(4) {
-    /* display: block; */
-    width: 50%;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    /* border: 2px solid red; */
+
+#carouselExampleCaptions {
+    text-align: center;
+    align-self: center;
+    background-color: white;
 }
 
 
-#his{
+#his {
     margin-top: 5%;
     width: 100%;
+}
+
+.time {
+    background-color: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nosso-time nosso-time nosso-time nosso-time nosso-time nosso-time nosso-time nosso-time nosso-time nosso-time"
+        "p1 p1 p2 p2 p3 p3 p4 p4 p5 p5"
+        "p1 p1 p2 p2 p3 p3 p4 p4 p5 p5"
+        "p1 p1 p2 p2 p3 p3 p4 p4 p5 p5";
+    text-align: center;
+}
+
+.nosso-time {
+    grid-area: nosso-time;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.p3 {
+    grid-area: p3;
+}
+
+.p4 {
+    grid-area: p4;
+}
+
+.p5 {
+    grid-area: p5;
 }
