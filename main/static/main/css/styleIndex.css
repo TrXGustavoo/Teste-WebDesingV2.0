@@ -53,6 +53,7 @@ h3 {
 .obj {
     text-align: justify;
     text-decoration: none;
+    margin: 5%;
 }
 
 .flex-items:nth-child(3) {
@@ -79,6 +80,11 @@ h3 {
 #his {
     margin-top: 5%;
     width: 100%;
+}
+
+#his p{
+    margin: 3%;
+    text-align: justify;
 }
 
 .time {
@@ -122,3 +128,5 @@ h3 {
 .p5 {
     grid-area: p5;
 }
+
+

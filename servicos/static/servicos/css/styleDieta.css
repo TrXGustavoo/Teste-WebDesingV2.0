@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.row{
+  margin: 5% !important;
+}
+
+a.botao-dietas{
+  padding: .25rem .5rem; 
+  font-size: .75rem;
+  font-weight: 600;
+  margin-top: 200px;
+  padding: 15px 20px !important;
+  background-color: #0D6EFD !important;
+  color: white !important;
+  text-decoration: none;
+  /* border: 3px solid red !important ; */
+  border-radius: .5rem;
+}
+
+
