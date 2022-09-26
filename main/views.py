@@ -1,9 +1,9 @@
-from importlib.resources import contents
-from multiprocessing import context
-from django.http import HttpResponse, HttpResponseRedirect
+# from importlib.resources import contents
+# from multiprocessing import context
+# from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
-from django.contrib.auth import authenticate
+# from django.contrib.auth.models import User
+# from django.contrib.auth import authenticate
 from django.contrib.auth import login
 from django.views.generic import TemplateView
 from .forms import NovoUsuarioForm

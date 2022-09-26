@@ -27,6 +27,7 @@
     align-self: auto;
     order: 0;
     /* border: 2px solid red; */
+    background: linear-gradient(to bottom, #0D5673 19%, #7DCCB5 100%);
 }
 
 #img-teste {
