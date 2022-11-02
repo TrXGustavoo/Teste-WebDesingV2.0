@@ -15,3 +15,6 @@ class TreinoView(TemplateView):
 
 class PrimeiraView(TemplateView):
     template_name = 'primeira.html'
+
+class IMCView(TemplateView):
+    template_name = 'IMC.html'

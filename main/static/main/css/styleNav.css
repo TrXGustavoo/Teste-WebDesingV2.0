@@ -20,13 +20,14 @@
 
 
 #logo{
-    flex: 30%;
-    /* border: 1px solid yellowgreen; */
+    flex: 20%;
+    border: 100px solid yellowgreen !important;
+    
 }
 
 #menu-servicos{
-    flex: 70%;
-    /* border: 1px solid red; */
+    flex: 80%;
+    border: 1px solid red;
     text-align: right;
 }
 
