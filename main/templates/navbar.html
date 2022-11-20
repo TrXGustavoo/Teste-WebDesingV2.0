@@ -25,14 +25,13 @@
 <body>
     <nav id="barra-navegacao">
         <div id="logo">
-            <h1>HYGIA</h1>
+            <img id="hy" src="{% static 'main/img/LOGO.png' %}"  alt="">
         </div>
         <div id="menu-servicos">
             <a id="btns-index" href="{% url 'home' %}">Início</a>
             <a id="btns-index" href="{% url 'dietas' %}">Dietas</a>
             <a class="btns-index" href="{% url 'treinos' %}">Treinos</a>
             <a class="btns-index" href="{% url 'IMC' %}">Calculadora IMC</a>
-            <a class="btns-index" href="#">Contato</a>
             {% if not user.is_authenticated %}
             <a class="btns-index" href="{% url 'login' %}">Login</a>
             {% endif %}

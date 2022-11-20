@@ -15,8 +15,8 @@
 
 .div1 {
     grid-area: 1 / 1 / 6 / 3;
-    
-    
+
+
 }
 
 
@@ -26,15 +26,19 @@
     text-align: center;
 }
 
-.endereco{
+.endereco {
     margin-top: 10%;
 }
 
 .div3 {
     grid-area: 1 / 5 / 6 / 7;
-   
+
 }
 
-ul{
+ul {
     list-style-type: none;
+}
+
+#hyg {
+    width: 400px;
 }

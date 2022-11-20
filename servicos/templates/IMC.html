@@ -8,11 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'main/css/styleIMC.css' %}">
     <link rel="stylesheet" href="{% static 'main/js/imc.js' %}">
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> 
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <title>Document</title>
 </head>
+
 <body>
 
     {% include 'navbar.html' %}
@@ -26,22 +27,61 @@
         <div class="inputVal">
             <div class="input">
                 <label>Nome:</label>
-                <input  id="inputNome" type="text">
+                <input id="inputNome" type="text">
             </div>
             <div class="input">
-                <label>Altura:</label> 
-                <input  id="inputAlt" type="number" placeholder="Em metros" >
+                <label>Altura:</label>
+                <input id="inputAlt" type="number" placeholder="Em metros">
             </div>
             <div class="input">
-                 <label>Peso:</label>
-                <input  id="inputPeso" type="number" placeholder="Em Kilogramas">
+                <label>Peso:</label>
+                <input id="inputPeso" type="number" placeholder="Em Kilogramas">
             </div>
-            <button id="btn-add"class="add"onclick="Calcular()">Calcular</button>
+            <button id="btn-add" class="add" onclick="Calcular()">Calcular</button>
         </div>
         <div class="res" id="res">
 
         </div>
     </div>
-    
+
+
+    {% include 'rodape.html' %}
+
+    <script>
+        function Calcular() {
+            let inputNome = document.getElementById('inputNome')
+            let inputAltura = document.getElementById('inputAlt')
+            let inputPeso = document.getElementById('inputPeso')
+
+            let res = document.getElementById('res')
+            res.innerHTML = ''
+
+            let VinputNome = inputNome.value
+            let VinputAlt = Number(inputAltura.value)
+            let VinputPeso = Number(inputPeso.value)
+
+            const resultado = VinputPeso / (VinputAlt * VinputAlt)
+
+            console.log(resultado)
+
+            if (resultado < 18.5) {
+                res.innerHTML += `${VinputNome} seu IMC é de ${Math.floor(resultado)} e você está abaixo do peso`
+            } else if (resultado >= 18.5 && resultado < 25) {
+                res.innerHTML += `${VinputNome} seu IMC é de ${Math.floor(resultado)} e você está com o peso ideal parabens!!!`
+            } else if (resultado >= 25 && resultado < 30) {
+                res.innerHTML += `${VinputNome} seu IMC é de ${Math.floor(resultado)} e você está levemente acima do peso`
+            } else if (resultado >= 30 && resultado < 40) {
+                res.innerHTML += `${VinputNome} seu IMC é de ${Math.floor(resultado)} e você está com o obesidade grau II cuidado!!!`
+            } else if (resultado >= 40) {
+                res.innerHTML += `${VinputNome} seu IMC é de ${Math.floor(resultado)} e você está com o obesidade grau III cuidado!!!`
+            }
+            else {
+                console.log('erro')
+            }
+
+        }
+
+    </script>
 </body>
+
 </html>

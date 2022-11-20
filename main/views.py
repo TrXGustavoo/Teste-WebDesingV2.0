@@ -12,6 +12,9 @@ from django.contrib import messages
 
 class HomeView(TemplateView):
     template_name = 'index.html'
+    
+class RodapeView(TemplateView):
+    template_name = 'rodape.html'
 
 def register(request):
     if request.method == 'POST':

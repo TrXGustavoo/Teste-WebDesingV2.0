@@ -31,6 +31,9 @@
 }
 
 #img-teste {
+    margin-left: 15%;
+    margin-top: 2%;
+    max-width: 60%;
     border-radius: 64% 36% 77% 23% / 100% 69% 31% 0%;
 }
 

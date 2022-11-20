@@ -1,9 +1,9 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 
-#barra-navegacao{
+#barra-navegacao {
     display: flex;
     flex-direction: row;
     height: 100px;
@@ -19,18 +19,17 @@
 
 
 
-#logo{
+#logo {
     flex: 20%;
-    
+
 }
 
-#menu-servicos{
+#menu-servicos {
     flex: 80%;
-    border: 1px solid red;
     text-align: right;
 }
 
-a{
+a {
     margin-right: 5% !important;
     color: white !important;
     padding: 10px 22.4px !important;
@@ -42,3 +41,7 @@ a{
     font-size: 26px;
 }
 
+#hy {
+    width: 270px;
+    margin-top: 15%;
+}

@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'main/css/styleIndex.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/styleTreino.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>Pagina de Treinos</title>
@@ -14,33 +14,39 @@
 
 <body>
 
-    <nav>    
+    <nav>
         {% include 'navbar.html' %}
     </nav>
 
     <main>
-        <div class="row">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-info">Go somewhere</a>
+        <div class="flex-container">
+            <div class="flex-items">
+                <img id="img-esq" src="{% static 'main/img/esqueleto recortado.png' %}" max-width="60%" alt="">
+            </div>
+            <div class="flex-items">
+                <div class="flex-container-musculos">
+                    <div class="btn-group" role="group">
+                        <button type="button" id="drop" class="btn btn-primary dropdown-toggle"  data-bs-toggle="dropdown" aria-expanded="false">
+                          Musculo desejado:
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><div class="flex-items-m" class="dropdown-item"><button class="btn-m" onclick="braco()">Braço</button></div></li>
+                          <li><div class="flex-items-m"class="dropdown-item"><button class="btn-m" onclick="perna()">Perna</button></div></li>
+                          <li><div class="flex-items-m"class="dropdown-item"><button class="btn-m" onclick="abs()">Abdomen</button></div></li>
+                          <li><div class="flex-items-m"class="dropdown-item"><button class="btn-m" onclick="peito()">Peitoral</button></div></li>
+                          <li><div class="flex-items-m"class="dropdown-item"><button class="btn-m" onclick="corpoTodo()">Corpo Todo</button></div></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-info">Go somewhere</a>
+            <div class="flex-items">
+                <div id="videos" style="display=none;">
+                    <video src=""></video>
                 </div>
             </div>
         </div>
     </main>
-    <a href="" id="botao-dietas">tese</a>
+
 
     <footer>{% include 'rodape.html' %}</footer>
 
@@ -51,5 +57,60 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
+
+    <script>
+        var img = document.getElementById('img-esq')
+        var vdo = document.getElementById('videos')
+        var teste = false
+
+        function braco() {
+            if (teste == true) {
+                return 0
+            } else {
+                img.src = '{% static "main/img/braço esqueleto.png" %}'
+                vdo.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/BYvET-Z7SZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+
+            }
+
+        }
+        function perna() {
+            if (teste == true) {
+                return 0
+            } else {
+                img.src = '{% static "main/img/perna esqueleto.png" %}'
+                vdo.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/a_GMh4ikfbM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            }
+
+        }
+        function abs() {
+            if (teste == true) {
+                return 0
+            } else {
+                img.src = '{% static "main/img/abdomen esqueleto.png" %}'
+                vdo.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/T6rjxLP0S_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            }
+
+        }
+        function peito() {
+            if (teste == true) {
+                return 0
+            } else {
+                img.src = '{% static "main/img/peitoral esqueleto.png" %}'
+                vdo.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/S3ZtQXEV504" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            }
+
+        }
+        function corpoTodo() {
+            if (teste == true) {
+                return 0
+            } else {
+                img.src = '{% static "main/img/esqueleto recortado.png" %}'
+                vdo.innerHTML = ''
+            }
+
+        }
+
+    </script>
 </body>
+
 </html>
