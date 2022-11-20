@@ -10,6 +10,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <title>HYGEIA-SAÚDE</title>
+    <style>
+        .btnl{
+            background-color: black !important; 
+            color:  white;
+            width: 170px;
+            background:linear-gradient(to bottom, #0D5673 19%, #7DCCB5 100%);
+            background-color:#66ffe6;
+            border-radius:10px;
+            border:1px solid #4e6096;
+            display:inline-block;
+            cursor:pointer; 
+            color:#ffffff;
+            font-family:Arial;
+            font-size:23px;
+            text-decoration:none;
+            height: 50px;
+            margin-top: 4%;
+
+        }
+        .btnl:hover {
+            background:linear-gradient(to bottom, #476e9e 5%, #66ffe6 100%);
+            background-color:#476e9e;
+        }
+        .btnl:active {
+            position:relative;
+            top:1px;
+        }
+    </style>
 </head>
 
 <body style="background-color: white;">
@@ -18,71 +46,61 @@
 
     <main>
         <section id="headline-img">
-            <img id="img-a" src="{% static 'main/img/principalatt.png' %}" alt="">
+            <img id="img-a" src="{% static 'main/img/Index-img.png' %}" alt="">
         </section>
-        <section id="inspiracoes" class="flex-container">
+        <section class="flex-cont">
             <div class="flex-items">
-                <img id="img-teste" src="{% static 'main/img/health.jpg' %}" alt="">
+                <img id="img-teste" src="{% static 'main/img/smart.png' %}" alt="">
             </div>
             <div class="flex-items">
                 <h3>
                     OBJETIVOS DA EMPRESA
                 </h3>
                 <p class="obj">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quo nostrum nulla modi, velit
-                    corrupti? Adipisci ullam officiis neque praesentium perspiciatis unde possimus, quae impedit aut
-                    commodi, dignissimos numquam quod.
+                    A Hygia tem a missão e a vontade de melhorar a qualidade de vida da população, auxiliando profissionais da saúde a prestarem apoio ao consumidor final em diferentes vertentes da área da saúde.  O objetivo da empresa tem seus ideais definidos em cima do método SMART, uma forma de definir e priorizar os próximos passos da mesma. Mas ao final das contas o que é esse método SMART?
                 </p>
                 <p class="obj">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, asperiores. Perferendis dicta
-                    quis, accusamus consectetur ex doloribus doloremque. Nisi modi explicabo sint itaque! Consequuntur
-                    assumenda cumque amet deserunt! Recusandae, sed?
+                    S — Specific, ou específica
+                    Para que se consiga alcançar o que foi proposto em uma meta, é necessário que todos os envolvidos tenham claro entendimento do que se trata. Para isso, ela deve ser específica.
+
+                    M — Measurable, ou mensurável
+                    Como criar uma meta se ela não pode ser medida? Isso não faria nenhum sentido.
+
+                    Imagine que você quer aumentar a satisfação dos clientes com a sua marca. Porém, você não faz essa avaliação, não tem uma pesquisa de satisfação. Então, você não conseguiria acompanhar o desempenho das ações e dizer que a meta foi alcançada.
+
+                    A — Attainable ou atingível
+                    Do que adianta criar uma meta se ela não pode ser atingida? Apesar de parecer óbvio, muitas empresas pecam nesse ponto.
+
+                    R — Relevant, ou relevante
+                    Quando você cria uma meta e designa responsáveis, serão elaboradas estratégias para que os resultados sejam alcançados. Porém, quanto mais relevante for a meta, mais motivados estarão os envolvidos. Claro, considerando que sejam metas alcançáveis.
+
+                    T — Time based, ou temporal
+                    O último ponto das metas SMART é extremamente importante. Qualquer meta traçada deve ter prazo. Se você cria uma e não estabelece um tempo para a sua realização, ele pode ser alcançado em 1 dia, 1 mês, 1 ano.
                 </p>
             </div>
-            <div class="flex-items">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="{% static 'main/img/bolt2.png' %}" alt="..." width="75%" style="border: 1px solid red">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{% static 'main/img/akali_50.jpg' %}" alt="..." width="75%" style="border: 1px solid red">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="{% static 'main/img/boltatt.png' %}" alt="..." width="75%">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+        </section>
+        <section id="inspiracoes" class="flex-container">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'main/img/corrida.png' %}" class="imgI" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'main/img/bolt3.png' %}" class="imgI" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'main/img/phelps2.png' %}" class="imgI" alt="...">
+                  </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
         <section id="his" class="flex-items">
             <h3>Cronologia HYGIA</h3>
@@ -116,23 +134,28 @@
                 </div>
                 <div class="p1" >
                     <h4>Christopher</h4>
-                    <img src="{% static 'main/img/cris.jpg' %}" alt="">
+                    <img src="{% static 'main/img/foto chris.png' %}" alt="" style="width: 150px;">
+                    <a class="btnl"  href="https://www.linkedin.com/in/christopher-juliato-14a898250/" role="button" target="_blank">Linkedin</a>
                 </div>
                 <div class="p2" >
                     <h4>Gustavo</h4>
-                    <img src="{% static 'main/img/eu.jpg' %}" alt="">
+                    <img src="{% static 'main/img/foto guzinho.png' %}" alt="" style="width: 150px;">
+                    <a class="btnl"  href="https://www.linkedin.com/in/gustavo-passos-899502226/" role="button" target="_blank">Linkedin</a>
                 </div>
                 <div class="p3" >
                     <h4>Giovana</h4>
-                    <img src="{% static 'main/img/gi.jpg' %}" alt="">
+                    <img src="{% static 'main/img/foto gih.png' %}" alt="" style="width: 150px;">
+                    <a class="btnl"  href="https://www.linkedin.com/in/giovana-merguizo/" role="button" target="_blank">Linkedin</a>
                 </div>
                 <div class="p4" >
                     <h4>João</h4>
-                    <img src="" alt="">
+                    <img src="{% static 'main/img/foto joao.png' %}" alt="" style="width: 150px;">
+                    <a class="btnl"  href="https://www.linkedin.com/in/joão-luiz-orlandini-alves-a48585257/" role="button" target="_blank">Linkedin</a>
                 </div>
                 <div class="p5" >
                     <h4>Leonardo</h4>
-                    <img src="" alt="">
+                    <img src="{% static 'main/img/foto leonardo.png' %}" alt="" style="width: 150px;">
+                    <a class="btnl"  href="https://www.linkedin.com/in/leonardo-barbosa-gonçalves-227066231/" role="button" target="_blank">Linkedin</a>
                 </div>
             </div>
         </section>
