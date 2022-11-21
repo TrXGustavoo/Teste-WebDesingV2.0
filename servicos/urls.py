@@ -3,7 +3,7 @@ from .views import *
 from django.contrib.auth.decorators import login_required
 
 urlpatterns = [
-    path('dietas/', DietasView.as_view(), name='dietas'),
+    path('dietas/', login_required(DietasView.as_view()), name='dietas'),
     path('treino/', login_required(TreinoView.as_view()), name='treinos'),
     path('próta/', login_required(PrimeiraView.as_view()), name='primeira'),
     path('Deftéra/', login_required(SegundaView.as_view()), name='segunda'),
